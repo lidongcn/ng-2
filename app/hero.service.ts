@@ -14,8 +14,14 @@ export class HeroService {
     // 模拟慢速连接。
     getHeroesSlowly(): Promise<Hero[]> {
         return new Promise<Hero[]>(resolve =>
-            setTimeout(resolve, 2000)) // delay 2 seconds
+            setTimeout(resolve, 500)) // delay
             .then(() => this.getHeroes());
+    };
+    // 用来通过id从getHeros过滤英雄列表
+    getHero(id: number): Promise<Hero> {
+        return this.getHeroes()
+            .then(heroes => heroes.find(hero => hero.id === id));
     }
+
 
 }
