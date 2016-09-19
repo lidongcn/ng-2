@@ -1,3 +1,16 @@
 .idea
 build
 node_modules
+app/app.routing.js
+app/app.routing.js.map
+app/dashboard.component.js
+app/dashboard.component.js.map
+app/hero-search.component.js
+app/hero-search.component.js.map
+app/hero-search.service.js
+app/hero-search.service.js.map
+app/in-memory-data.service.js
+app/in-memory-data.service.js.map
+app/rxjs-extensions.js
+app/rxjs-extensions.js.map
+typings/
