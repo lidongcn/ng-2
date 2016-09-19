@@ -27,6 +27,9 @@ var AppModule = (function () {
     }
     AppModule = __decorate([
         core_1.NgModule({
+            /**
+             * 本模块由其它模块导出的类。
+             */
             imports: [
                 platform_browser_1.BrowserModule,
                 forms_1.FormsModule,
@@ -34,6 +37,9 @@ var AppModule = (function () {
                 angular2_in_memory_web_api_1.InMemoryWebApiModule.forRoot(in_memory_data_service_1.InMemoryDataService),
                 app_routing_1.routing
             ],
+            /**
+             * 本模块中拥有的视图类,包含components,directives,pips。
+             */
             declarations: [
                 app_component_1.AppComponent,
                 dashboard_component_1.DashboardComponent,
@@ -41,6 +47,9 @@ var AppModule = (function () {
                 heroes_component_1.HeroesComponent,
                 hero_search_component_1.HeroSearchComponent
             ],
+            /**
+             *  服务 的创建者。本模块把它们加入全局的服务表中，让它们在应用中的任何部分都可被访问到。
+             */
             providers: [hero_service_1.HeroService],
             bootstrap: [app_component_1.AppComponent]
         }), 
