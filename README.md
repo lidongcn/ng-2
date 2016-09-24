@@ -1,2 +1,2 @@
 # ng-2
-Angular2+TypeScript
+使用Angular2+TypeScript做的英雄编辑器

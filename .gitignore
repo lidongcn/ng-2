@@ -14,3 +14,4 @@ app/in-memory-data.service.js.map
 app/rxjs-extensions.js
 app/rxjs-extensions.js.map
 typings/
+.DS_Store
